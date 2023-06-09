@@ -1,0 +1,6 @@
+applicationType: grpc
+defaultPackage: com.example
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, gradle, grpc, jackson-databind, junit, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, readme, shade, yaml]

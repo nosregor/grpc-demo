@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example";
+option java_outer_classname = "GrpcDemo";
+option objc_class_prefix = "HLW";
+
+package com.example;
+
+service GrpcDemoService {
+  rpc send (GrpcDemoRequest) returns (GrpcDemoReply) {}
+}
+
+message GrpcDemoRequest {
+  string name = 1;
+}
+
+message GrpcDemoReply {
+  string message = 1;
+}
